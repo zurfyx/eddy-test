@@ -12,6 +12,13 @@ script:
   - npm run lint
   - npm run coverage
 
+after_script:
+  - cd demo
+  - npm install
+  - npm test
+  - npm build
+  - cd ..
+
 after_success:
   - cat ./coverage/lcov.info | coveralls
 
