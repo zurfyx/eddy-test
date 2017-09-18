@@ -17,5 +17,5 @@ after_success:
 
 deploy:
   provider: script
-  script: 'cd demo/ && npm run deploy'
+  script: 'cd demo/ && npm install && npm run deploy'
   skip_cleanup: true
