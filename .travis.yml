@@ -17,5 +17,9 @@ after_success:
 
 deploy:
   provider: script
-  script: 'cd demo/ && npm install && npm run deploy'
+  script: 'scripts/demo-deploy.sh'
   skip_cleanup: true
+
+env:
+  global:
+    - secure: "IR1Z/1ZA7yTPj6dyDdij2lfBM43eH++fMLz/+5f0m7fQ4nZE3QDEHQ2Vnkx3igBnB3IuiARVVJc/QfbT4eJBnMt1i3uJBmBYk0wpJzLxaVBDGk0H13h540HNJ/Vm8OZ4WbwwNetwnI4QTnSDlSAtRrtAK7d8fQxzFF6Xr4M0xQiYY3+OPVSqQ56+ONcIVJgU7G4Jc68+2e/9uv4YM58GWItIvSqFyc92lncUae+PrIrCn3KvRN7y9e2VTRvAaonFwha12p7/gYB4Eupkc6JRvsUDznrA7vIb78+8xpLYnG455VEfIk0TmJIz+lNbp4B6q7eQchSkchG/cYPDjugvc82uhm2pl2PpU/viTnLj+aPRFKo9yT7TqoUlh6nvKy9Douijvy80cWc3WbWYnLD334fweMzhoqA6Imn3tOQgZ0dSvs61hAVjkIPyCw23HzBoki6DULJ/WcfB5xuQiljcyhhGviVMPnpjKv3UkxjInOgLKGMpDb6ttyN96Lbm3GOKknvSX7BdgzOQ89pvCUNfzclAusWi2fdylhC0VwIxD3RAlkubBONYoG9kQFJ4m6dxojtuZ2evv1opAmBxwp7XC9nR+9dR0Nv2LioBCx0aXirpKnofO7Ue+EQ9qe/bZUsfCJ2zY6wHAMCLYx2CbmUBRW/gj7xkesuFFzWOcMWoVLg="
