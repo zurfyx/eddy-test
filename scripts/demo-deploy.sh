@@ -17,7 +17,7 @@ git init
 git config user.name "Travis CI"
 git config user.email "tra@vi.s"
 
-git remote add upstream "https://$GH_TOKEN@github.com/zurfyx/travis-build.git"
+git remote add upstream "https://$GH_TOKEN@github.com/zurfyx/eddystone-web-bluetooth.git"
 git fetch upstream
 git reset upstream/gh-pages
 
