@@ -17,7 +17,7 @@ after_success:
 
 deploy:
   provider: script
-  script: 'scripts/demo-deploy.sh'
+  script: scripts/demo-deploy.sh
   skip_cleanup: true
 
 env:
